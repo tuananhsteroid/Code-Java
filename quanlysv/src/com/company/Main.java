@@ -59,7 +59,7 @@ class StudentManagement {
     private static void enterStudentList() {
         System.out.print("Enter the number of students: ");
         int numOfStudents = scanner.nextInt();
-        scanner.nextLine(); // Đọc bỏ dòng dư sau khi nhập số lượng sinh viên
+        scanner.nextLine(); 
 
         for (int i = 0; i < numOfStudents; i++) {
             System.out.print("Enter first name: ");
@@ -67,10 +67,10 @@ class StudentManagement {
             System.out.print("Enter last name: ");
             String lastName = scanner.nextLine();
 
-            // Thêm sinh viên vào danh sách
+            
             studentList.add(new Student(firstName, lastName));
 
-            // Thông báo nhập tên thành công
+          
             System.out.println("Student " + firstName + " " + lastName + " added successfully!");
         }
     }
